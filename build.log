@@ -1,0 +1,83 @@
+
+> stackfold-website@0.1.0 prebuild
+> node scripts/ingest-data.mjs
+
+[ingest-data] Generated lib/generated/campaignAB.ts from data/campaign_a_b.json
+[ingest-data] Wrote lib/generated/index.ts with 1 exports
+
+> stackfold-website@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.12
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+
+Failed to compile.
+
+./app/(components)/components.tsx
+157:72  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+157:99  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./app/(marketing)/page.tsx
+51:27  Error: 'i' is defined but never used.  @typescript-eslint/no-unused-vars
+160:75  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./components/ImpactChart.tsx
+29:27  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+29:52  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./components/SignalStrip.tsx
+15:18  Error: 'color' is assigned a value but never used.  @typescript-eslint/no-unused-vars
+
+./components/ui/shadcn.tsx
+51:18  Error: An interface declaring no members is equivalent to its supertype.  @typescript-eslint/no-empty-object-type
+64:18  Error: An interface declaring no members is equivalent to its supertype.  @typescript-eslint/no-empty-object-type
+136:1  Warning: Assign object to a variable before exporting as module default  import/no-anonymous-default-export
+
+./components/visuals/r3f/NeuralWebScene.tsx
+40:6  Warning: React Hook useMemo has a missing dependency: 'color'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+74:29  Error: Unexpected any. Specify a different type.  @typescript-eslint/no-explicit-any
+
+./src/app/(app)/dashboard/notifications/page.tsx
+2:1  Error: Expected an assignment or function call and instead saw an expression.  @typescript-eslint/no-unused-expressions
+85:10  Error: 'AnimatePresence' is not defined.  react/jsx-no-undef
+
+./src/app/(app)/dashboard/usage/page.tsx
+2:1  Error: Expected an assignment or function call and instead saw an expression.  @typescript-eslint/no-unused-expressions
+
+./src/app/(marketing)/privacy-policy/page.tsx
+1:25  Error: Parsing error: Expression expected.
+
+./src/app/(marketing)/terms-of-service/page.tsx
+1:25  Error: Parsing error: Expression expected.
+
+./src/components/dashboard/IndexDetailSlideOver.tsx
+2:1  Error: Expected an assignment or function call and instead saw an expression.  @typescript-eslint/no-unused-expressions
+28:6  Error: 'AnimatePresence' is not defined.  react/jsx-no-undef
+
+./src/components/dashboard/NotificationSnackbar.tsx
+9:2  Error: Parsing error: Expected corresponding JSX closing tag for 'a'.
+
+./src/components/dashboard/SegmentSaveSheet.tsx
+6:1  Error: Expected an assignment or function call and instead saw an expression.  @typescript-eslint/no-unused-expressions
+43:6  Error: 'AnimatePresence' is not defined.  react/jsx-no-undef
+
+./src/components/dashboard/SidebarNav.tsx
+2:1  Error: Expected an assignment or function call and instead saw an expression.  @typescript-eslint/no-unused-expressions
+80:10  Error: 'AnimatePresence' is not defined.  react/jsx-no-undef
+
+./src/components/ui/KPIBadge.tsx
+2:1  Error: Expected an assignment or function call and instead saw an expression.  @typescript-eslint/no-unused-expressions
+
+./src/components/ui/Newsletter.tsx
+31:14  Error: 'error' is defined but never used.  @typescript-eslint/no-unused-vars
+
+./src/components/ui/SectionHeader.tsx
+2:1  Error: Expected an assignment or function call and instead saw an expression.  @typescript-eslint/no-unused-expressions
+
+./src/components/ui/TestimonialCard.tsx
+1:23  Error: Parsing error: Expression expected.
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
