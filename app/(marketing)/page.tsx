@@ -5,6 +5,7 @@ import { Reveal } from "../(components)/Reveal";
 import dynamic from "next/dynamic";
 import DataUniverse from "../../components/visuals/DataUniverse";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { AmbientLight } from "@react-three/drei";
 import PaperPlane from "../../components/three/PaperPlane";
 
 import AtmosphericGlow from "../../components/three/AtmosphericGlow";
@@ -89,7 +90,7 @@ export default function HomePage() {
                 <div className="mx-auto aspect-[4/3] w-full max-w-[640px] overflow-hidden rounded-3xl border border-frost bg-[rgba(13,15,26,0.5)] backdrop-blur">
                   <Canvas dpr={[1,1.5]} camera={{ fov: 60, position: [0, 0, 12] }}>
                     <Suspense fallback={null}>
-                      <ambientLight intensity={0.55} color={"#FFB97A"} />
+                     <AmbientLight intensity={0.55} color={"#FFB97A"} />
                       <AtmosphericGlow />
                       <PaperPlane />
                       <Dolly />
